@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0; box-sizing: border-box;}
+ul, ol, li{list-style: none;}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Kelsi';
+    src: url("../font/Kelsi-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'korea';
+    src: url("../font/korea_Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-size: 14px;
+    color: #333;
+    overflow-x: hidden;
+    font-family: 'korea';
+    cursor: url("../img/cursor_heart.png"), pointer;
+    background-image: url("../img/back.png");
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    background-size: contain;
+}
+
+.clear_fix::before, .clear_fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img{vertical-align: bottom;}
+
+button:hover{
+    cursor: url("../img/cursor_heart.png"), pointer;
+}
+
+.cont_title{
+    font-family: 'Kelsi';
+}
+
+.main > li > a{
+    font-family: 'Kelsi';
+}
+
+#footer{
+    font-family: 'PyeongChangPeace_bold';
+}

@@ -1,0 +1,509 @@
+@charset "utf-8";
+
+@media screen and (max-width:768px) {
+    #header{
+        display: none;
+    }
+
+    #mo_header{
+        display: block;
+        width: 100%;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.7);
+        border-bottom: 2px solid #eee;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    .mo_head_inner{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mo_logo{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mo_logo img{
+        height: 90px;
+    }
+
+    .mo_menu_btn{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        position: fixed;
+        z-index: 10;
+        width: 40px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #Ff8888;
+        transition: transform 0.3s ease-in-out, opacity 0.1s ease-out;
+    }
+
+    .line.line1{
+        transform: translateY(-13px);
+    }
+    
+    .line.line2{}
+    
+    .line.line3{
+        transform: translateY(13px);
+    }
+
+    .mo_menu_btn.active .line.line1{
+        transform: translateY(0) rotate(45deg);
+        background-color: black;
+
+    }
+
+    .mo_menu_btn.active .line.line2{
+        opacity: 0;
+    }
+    
+    .mo_menu_btn.active .line.line3{
+        transform: translateY(0) rotate(-45deg);
+        background-color: black;
+    }
+
+    .mo_nav{
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid red; */
+    }
+
+    .mo_main{
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        box-shadow: 0 2px 5px gray;
+    }
+    
+    .mo_main li{
+        width: calc(100% / 5);
+    }
+
+    .mo_main li a{
+        display: block;
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .mo_main li:hover a{
+        background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=ff8888)
+    }
+
+    
+
+
+
+    /* con1영역 , 소개 영역 */
+    .cont1_inner{
+        width: 100%;
+    }
+
+    .cont_title h2{
+        font-size: 2rem;
+    }
+
+    .cont1_contents{
+        width: 100%;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .cont1_poster_box{
+        width: 50%;
+        height: 30%;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid red; */
+    }
+
+    .flip{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .face{
+        width: 100%;
+    }
+
+    .face img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cont1_mo{
+        display: none;
+    }
+
+    .cont1_txt{
+        width: 45%;
+        font-size: 1rem;
+        padding: 0;
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        text-align: center;
+        line-height: 1.6;
+        align-items: center;
+    }
+
+    .cont1_txt h3{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .cont1_txt p{
+        width: 100%;
+    }
+
+    .cont1_txt .pink{
+        font-size: 1em;
+        padding:0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cont1_txt .sub_title{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .cont1_txt span{
+        width: 100%;
+        font-size: 0.9rem;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+
+
+
+
+    /* con2영역, 티켓 영역 */
+    .cont2 .cont_title{
+        margin: -25px 0 0;
+    }
+
+    .cont2_inner{
+        width: 100%;
+    }
+
+    .cont2_contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* margin-top: 300px; */
+        /* padding-top: 300px; */
+    }
+
+    .cont2_box{
+        width: 100%;
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 250px;
+    }
+
+    .cont2_img{
+        width: 60%;
+        padding: 0;
+    }
+
+    .cont2_img img{
+        width: 100%;
+    }
+
+    .cont2_baro_btn{
+        width: 30%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont2_baro_btn button{
+        padding: 10px 30px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cont2_txt{
+        display: block;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .cont2_baro_btn span img{
+        transform: rotate(90deg);
+    }
+    
+    .coment h3{
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .coment p{
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .coment p span{
+        font-size: 1.1rem;
+    }
+
+    .coment .last{
+        font-size: .88rem;
+    }
+
+
+
+
+    /* cont3영역, map영역 */
+    .cont3_inner{
+        width: 100%;
+    }
+
+    .cont3_contents{
+        width: 100%;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cont3_img{
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .cont3_txt{
+        width: 90%;
+        margin: 0 auto;
+        line-height: 1.7;
+        display: flex;
+        padding: 20px;
+    }
+
+    .road1{
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .road2{
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .cont3_txt h3{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .cont3_txt p{
+        font-size: .88rem;
+    }
+    
+    .cont3_txt p span{
+        font-size: 1rem;
+    }
+
+
+    /* cont4영역, 라인업 영역 */
+    .cont4_inner{
+        width: 100%;
+    }
+
+    .cont4_contents{
+        width: 100%;
+        /* display: block; */
+    }
+
+
+    .lineup_poster{
+        display: none;
+    }
+
+    .lineup_wrap{
+        width: 90%;
+        margin: 0 auto;
+        margin-right: 5%;
+    }
+
+    .lineup_list_wrap{
+        width: 100%;
+    }
+
+    .lineup_list{
+        width: 100%;
+    }
+    
+    .lineup_list li{
+        padding: 0;
+    }
+    
+    .lineup_img img{
+        width: 100%;
+    }
+
+    .date1{
+        font-size: 2rem;
+        left: 10%;
+    }
+
+    .date2{
+        font-size: 2rem;
+        left: 10%;
+    }
+
+
+
+
+    /* cont5영역, md영역 */
+    .cont5_inner{
+        width: 100%;
+    }
+
+    .cont5_contents{
+        width: 90%;
+        /* height: 65vh; */
+        margin: 0 auto;
+        margin-top: 220px;
+    }
+
+    .btn_tab{
+        width: 120px;
+        font-size: .88rem;
+        margin-left: 30px;
+    }
+
+    .shop_list{
+        flex-wrap: wrap;
+        padding: 0 20px;
+        /* border: 1px solid red; */
+    }
+
+    .shop_img img{
+        width: 210px;
+        height: 210px;
+        object-fit: cover;
+    }
+
+    .shop_img{
+        width: 100%;
+        position: relative;
+    } 
+
+    .shop_img_hover{
+        width: 210px;
+        height: 210px;
+        position: absolute;
+    }
+
+    .shop_img_hover span{
+        width: 80px;
+        left: 0;
+    }
+   
+    .shop_img_hover span:first-child{
+        left: 50px;
+    }
+    
+    .shop_img_hover span:last-child{
+        left: 150px;
+    }
+
+    .shop_txt{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: .7rem;
+    }
+
+    .shop_name{
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    .shop_txt .del{
+        padding: 0;
+    }
+
+
+
+
+
+
+    /* cont6영역, 커뮤니티영역 */
+    .cont6_inner{
+        width: 90%;
+    
+    }
+
+    .cont6_contents{
+        margin-top: 150px;
+    }
+
+
+
+
+    .foot_inner{
+        width: 100%;
+    }
+
+    .f_logo{
+        width: 20%;
+        height: 100px;
+    }
+
+    .f_logo img{
+        height: 80px;
+    }
+
+
+    .copy{
+        width: 50%;
+        padding: 0 30px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    .f_sns{
+        width: 25%;
+        padding-left: 10px;
+    }
+
+
+}
